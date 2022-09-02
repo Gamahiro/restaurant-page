@@ -8,10 +8,10 @@ function aboutContent() {
     if(content.hasChildNodes) {
         content.removeChild(content.firstChild);
     }
-
-    element.innerHTML = `<img class="headerImg" src="../pr-food.jpg" alt="puerto rican food">
+    element.className = 'contentDiv';
+    element.innerHTML = `<img id="headerImg" src="../pr-food.jpg" alt="puerto rican food">
     <div class="title">Who are we?</div>
-    <div class="aboutResto">god knows</div>`;;
+    <div class="menuText" style="text-align: center;">god knows</div>`;;
     content.appendChild(element);
 }
 
