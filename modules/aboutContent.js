@@ -1,3 +1,4 @@
+import headerImg from '../pr-food.jpg'
 
 
 const content = document.querySelector('#content');
@@ -9,7 +10,7 @@ function aboutContent() {
         content.removeChild(content.firstChild);
     }
     element.className = 'contentDiv';
-    element.innerHTML = `<img id="headerImg" src="../pr-food.jpg" alt="puerto rican food">
+    element.innerHTML = `<img id="headerImg" src=${headerImg} alt="puerto rican food">
     <div class="title">Who are we?</div>
     <div class="menuText" style="text-align: center;">god knows</div>`;;
     content.appendChild(element);
